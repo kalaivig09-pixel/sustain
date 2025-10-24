@@ -1,0 +1,70 @@
+export const INDIAN_STATES = [
+  "Andhra Pradesh",
+  "Arunachal Pradesh",
+  "Assam",
+  "Bihar",
+  "Chhattisgarh",
+  "Goa",
+  "Gujarat",
+  "Haryana",
+  "Himachal Pradesh",
+  "Jharkhand",
+  "Karnataka",
+  "Kerala",
+  "Madhya Pradesh",
+  "Maharashtra",
+  "Manipur",
+  "Meghalaya",
+  "Mizoram",
+  "Nagaland",
+  "Odisha",
+  "Punjab",
+  "Rajasthan",
+  "Sikkim",
+  "Tamil Nadu",
+  "Telangana",
+  "Tripura",
+  "Uttar Pradesh",
+  "Uttarakhand",
+  "West Bengal",
+  "Andaman and Nicobar Islands",
+  "Chandigarh",
+  "Dadra and Nagar Haveli and Daman and Diu",
+  "Delhi",
+  "Jammu and Kashmir",
+  "Ladakh",
+  "Lakshadweep",
+  "Puducherry",
+];
+
+export const COMMITMENT_THEMES = [
+  {
+    title: "Sustainable Living",
+    icon: "Home",
+    commitments: [
+      "Reduce single-use plastic in daily life",
+      "Switch to energy-efficient appliances",
+      "Practice waste segregation and recycling",
+    ],
+  },
+  {
+    title: "Green Mobility",
+    icon: "Car",
+    commitments: [
+      "Use public transport or carpool regularly",
+      "Walk or cycle for short distances",
+      "Support electric and hybrid vehicles",
+    ],
+  },
+  {
+    title: "Conscious Consumption",
+    icon: "ShoppingBag",
+    commitments: [
+      "Buy local and seasonal products",
+      "Reduce food waste and compost organics",
+      "Choose eco-friendly and sustainable brands",
+    ],
+  },
+];
+
+export const TARGET_PLEDGES = 1000000;
