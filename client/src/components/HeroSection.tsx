@@ -1,5 +1,5 @@
-import heroImage from "@assets/generated_images/Diverse_youth_climate_action_collaboration_e213f006.png";
-import { Button } from "@/components/ui/button";
+const heroImage = "/assets/images/hero-background.jpg";
+import { Button } from "./ui/button";
 import { ArrowDown } from "lucide-react";
 
 interface HeroSectionProps {
@@ -8,16 +8,16 @@ interface HeroSectionProps {
 
 export function HeroSection({ onTakePledge }: HeroSectionProps) {
   return (
-    <section className="relative w-full min-h-[85vh] flex items-center justify-center overflow-hidden">
+    <section className="relative w-full min-h-[85vh] flex items-center justify-center overflow-hidden bg-black">
       {/* Background Image with Gradient Overlay */}
       <div className="absolute inset-0">
         <img
           src={heroImage}
           alt="Diverse young people taking climate action"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover opacity-80"
           data-testid="img-hero-background"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/90" />
       </div>
 
       {/* Content */}

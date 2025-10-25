@@ -1,15 +1,15 @@
 import { useState, useRef } from "react";
 import { useQuery } from "@tanstack/react-query";
-import { apiRequest, queryClient } from "@/lib/queryClient";
-import { useToast } from "@/hooks/use-toast";
-import { HeroSection } from "@/components/HeroSection";
-import { LiveKPIs } from "@/components/LiveKPIs";
-import { WhyTakeAction } from "@/components/WhyTakeAction";
-import { PledgeForm } from "@/components/PledgeForm";
-import { CertificateModal } from "@/components/CertificateModal";
-import { PledgeWall } from "@/components/PledgeWall";
-import { Footer } from "@/components/Footer";
-import { type InsertPledge, type PublicPledge } from "@shared/schema";
+import { apiRequest, queryClient } from "../lib/queryClient";
+import { useToast } from "../hooks/use-toast";
+import { HeroSection } from "../components/HeroSection";
+import { LiveKPIs } from "../components/LiveKPIs";
+import { WhyTakeAction } from "../components/WhyTakeAction";
+import { PledgeForm } from "../components/PledgeForm";
+import { CertificateModal } from "../components/CertificateModal";
+import { PledgeWall } from "../components/PledgeWall";
+import { Footer } from "../components/Footer";
+import { type InsertPledge, type PublicPledge } from "../shared/schema";
 
 interface KPIStats {
   totalPledges: number;

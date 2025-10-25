@@ -1,28 +1,33 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
-// Removed platform-specific dev-only plugins that aren't needed for local development
+import { fileURLToPath } from "url";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
   plugins: [
     react(),
   ],
-  resolve: {
-    alias: {
-      "@": path.resolve(import.meta.dirname, "client", "src"),
-      "@shared": path.resolve(import.meta.dirname, "shared"),
-      "@assets": path.resolve(import.meta.dirname, "attached_assets"),
-    },
-  },
-  root: path.resolve(import.meta.dirname, "client"),
   build: {
-    outDir: path.resolve(import.meta.dirname, "dist/public"),
+    outDir: "dist",
     emptyOutDir: true,
   },
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "client/src"),
+      "@assets": path.resolve(__dirname, "attached_assets"),
+    }
+  },
+  root: "client",
+  base: "./",
   server: {
     fs: {
       strict: true,
-      deny: ["**/.*"],
+      allow: [".."],
     },
   },
+  optimizeDeps: {
+    include: ['@shared/schema']
+  }
 });

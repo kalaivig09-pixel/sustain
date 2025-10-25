@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import { Card } from "@/components/ui/card";
+import { Card } from "./ui/card";
 import { Users, GraduationCap, Briefcase, School } from "lucide-react";
-import { formatNumber } from "@/lib/utils";
-import { TARGET_PLEDGES } from "@/lib/constants";
+import { formatNumber } from "../lib/utils";
+import { TARGET_PLEDGES } from "../lib/constants";
 
 interface LiveKPIsProps {
   totalPledges: number;

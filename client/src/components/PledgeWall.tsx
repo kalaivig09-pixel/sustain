@@ -1,4 +1,4 @@
-import { Card } from "@/components/ui/card";
+import { Card } from "./ui/card";
 import {
   Table,
   TableBody,
@@ -6,10 +6,10 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/components/ui/table";
-import { Badge } from "@/components/ui/badge";
-import { getHeartRating, formatDate } from "@/lib/utils";
-import { type PublicPledge } from "@shared/schema";
+} from "./ui/table";
+import { Badge } from "./ui/badge";
+import { getHeartRating, formatDate } from "../lib/utils";
+import { type PublicPledge } from "../shared/schema";
 import { Loader2, Heart, Sprout } from "lucide-react";
 
 interface PledgeWallProps {

@@ -1,9 +1,9 @@
 import { useRef } from "react";
-import { Dialog, DialogContent } from "@/components/ui/dialog";
-import { Button } from "@/components/ui/button";
+import { Dialog, DialogContent } from "./ui/dialog";
+import { Button } from "./ui/button";
 import { Download, X, Globe, Heart } from "lucide-react";
-import { getHeartRating, formatDate } from "@/lib/utils";
-import { type InsertPledge } from "@shared/schema";
+import { getHeartRating, formatDate } from "../lib/utils";
+import { type InsertPledge } from "../shared/schema";
 
 interface CertificateModalProps {
   isOpen: boolean;
