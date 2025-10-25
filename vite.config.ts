@@ -10,7 +10,7 @@ export default defineConfig({
     react(),
   ],
   build: {
-    outDir: "dist",
+    outDir: "../client/dist",
     emptyOutDir: true,
   },
   resolve: {
