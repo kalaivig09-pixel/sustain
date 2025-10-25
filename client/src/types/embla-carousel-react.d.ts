@@ -1,3 +1,4 @@
+
 declare module 'embla-carousel-react' {
   import { ComponentType } from 'react';
 
